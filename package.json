@@ -18,7 +18,7 @@
     "scripts": {
         "dev": "vue serve --open src/vue-pay-password.vue",
         "build": "cross-env NODE_ENV=production rollup --config build/rollup.config.js",
-        "release": "yarn run build && cross-var git commit -am $npm_package_version && cross-var git tag $npm_package_version && git push && git push --tags && npm publish"
+        "release": "yarn run build && cross-var git commit -am $npm_package_version && cross-var git tag $npm_package_version && git push && git push --tags"
     },
     "dependencies": {},
     "devDependencies": {
