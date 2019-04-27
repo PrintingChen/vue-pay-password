@@ -1,5 +1,7 @@
 vue 的六位密码输入组件
 
+![image](https://github.com/atomcated/vue-pay-password/raw/master/screenshots/screen.gif)
+
 使用示例:
 
 ```

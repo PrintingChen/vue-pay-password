@@ -80,6 +80,7 @@ export default {
 <style scoped>
 .vue-pay-password {
     display: inline-block;
+    width: 200px;
 }
 
 .vue-pay-password-ul {
