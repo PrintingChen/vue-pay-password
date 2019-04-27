@@ -56,6 +56,7 @@ export default {
     watch: {
         inputValue(val) {
             this.inputValue = val.replace(/\D/g, '')
+            this.$emit('change', this.inputValue)
         },
     },
     methods: {

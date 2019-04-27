@@ -5,7 +5,7 @@ vue 的六位密码输入组件
 ```
 </template>
     <div>
-    	<vue-pay-password ref="pay-password"></vue-pay-password>
+    	<vue-pay-password ref="pay-password" @change="onChange"></vue-pay-password>
     </div>
 </template>
 
@@ -18,8 +18,11 @@ export default {
     },
     methods: {
     	getPassword() {
-    		return this.$refs['pay-password'].getPassword() // 返回字符串，业务中校验字符串是否够六位数字，以及密码加密
-    	}
+    		return this.$refs['pay-password'].getPassword()
+    	},
+        onChange(val) {
+            console.log(val)
+        }
     },
 }
 </script>
